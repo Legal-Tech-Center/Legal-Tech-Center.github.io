@@ -1,0 +1,15 @@
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Was wir tun</h2>
+
+    <div class="services-grid">
+      {% for service in site.data.services %}
+      <div class="service-card">
+        <div class="service-icon">{{ service.icon }}</div>
+        <h3 class="service-title">{{ service.title }}</h3>
+        <p class="service-description">{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

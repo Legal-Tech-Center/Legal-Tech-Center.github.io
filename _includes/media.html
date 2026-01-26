@@ -1,0 +1,13 @@
+<section class="media" id="media">
+  <div class="container">
+    <h2 class="section-title">Bekannt aus</h2>
+
+    <div class="media-grid">
+      {% for outlet in site.data.media %}
+      <div class="media-item">
+        <span class="media-name">{{ outlet.name }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

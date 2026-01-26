@@ -1,0 +1,41 @@
+- name: Florian Glatz
+  title: Rechtsanwalt, Software-Entwickler
+  image: florian-glatz.jpg
+  bio: |
+    Florian Glatz ist Rechtsanwalt und Software-Entwickler. Er berät Mandanten zu rechtlichen Fragen
+    rund um neue Technologien wie Blockchain, Smart Contracts und Legal Tech. Als Präsident des
+    Blockchain Bundesverbands (Bundesblock) und Mitgründer des Legal Tech Center setzt er sich für
+    die Digitalisierung des Rechtswesens ein.
+
+- name: Prof. Dr. Stephan Breidenbach
+  title: Professor für Zivilrecht, Mediator
+  image: stephan-breidenbach.jpg
+  bio: |
+    Stephan Breidenbach ist Professor für Zivilrecht an der Europa-Universität Viadrina in Frankfurt (Oder)
+    und Mediator. Er ist einer der Pioniere der Legal Tech Bewegung in Deutschland und forscht seit Jahren
+    zu den Auswirkungen der Digitalisierung auf das Recht und die juristische Arbeit.
+
+- name: Dr. Paul von Bünau
+  title: Data Scientist, Unternehmer
+  image: paul-von-buenau.jpg
+  bio: |
+    Paul von Bünau ist Data Scientist und Unternehmer. Er hat mehrere Unternehmen im Bereich
+    Machine Learning und Data Science gegründet und berät Unternehmen bei der Implementierung
+    von KI-Lösungen. Am Legal Tech Center bringt er seine Expertise in künstlicher Intelligenz
+    und datengetriebener Entscheidungsfindung ein.
+
+- name: Prof. Dr. Tino Schuppan
+  title: Professor für Public Management
+  image: tino-schuppan.jpg
+  bio: |
+    Tino Schuppan ist Professor für Public Management und Digital Government. Er forscht zu
+    E-Government und digitaler Verwaltung und bringt am Legal Tech Center seine Expertise
+    zur Digitalisierung im öffentlichen Sektor ein.
+
+- name: Prof. Dr. Christoph Brömmelmeyer
+  title: Professor für Bürgerliches Recht
+  image: christoph-broemmelmeyer.jpg
+  bio: |
+    Christoph Brömmelmeyer ist Professor für Bürgerliches Recht, Handels- und Gesellschaftsrecht
+    an der Europa-Universität Viadrina. Er forscht zu den rechtlichen Rahmenbedingungen von
+    Legal Tech und der Digitalisierung im Rechtsmarkt.

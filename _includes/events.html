@@ -1,0 +1,28 @@
+<section class="events" id="events">
+  <div class="container">
+    <h2 class="section-title">Workshops & Events</h2>
+
+    <div class="events-grid">
+      {% for event in site.data.events %}
+      <div class="event-card">
+        <div class="event-icon">{{ event.icon }}</div>
+        <h3 class="event-title">{{ event.title }}</h3>
+        <p class="event-description">{{ event.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="video-section">
+      <h3 class="video-title">Berlin Legal Tech 2017</h3>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/tH8L8p7ajvk"
+          title="Berlin Legal Tech 2017"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

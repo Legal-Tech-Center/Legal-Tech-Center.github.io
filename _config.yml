@@ -1,0 +1,23 @@
+# Site settings
+title: Legal Tech Center
+description: Wir machen die Arbeit mit Recht effektiver
+url: "https://legaltech.center"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Collections and defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
