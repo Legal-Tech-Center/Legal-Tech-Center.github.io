@@ -1,12 +1,35 @@
-- name: Legal Tribune Online
-- name: Handelsblatt
-- name: Frankfurter Allgemeine Zeitung
-- name: Süddeutsche Zeitung
-- name: Die Zeit
-- name: Der Spiegel
-- name: Wirtschaftswoche
-- name: Manager Magazin
-- name: Juve
+- name: NJW
+  logo: njw.png
+
+- name: LTO
+  logo: lto.png
+
+- name: Anwaltsblatt
+  logo: anwaltsblatt.png
+
+- name: Der Betrieb
+  logo: betrieb.png
+
+- name: Tech4Law
+  logo: tech4law.png
+
+- name: Soldan
+  logo: soldan.png
+
+- name: Irish Tech News
+  logo: irishtechnews.png
+
 - name: Legal Tech Blog
-- name: Anwalt.de
-- name: Beck Online
+  logo: legaltechblog.png
+
+- name: Hacking Law
+  logo: hackinglaw.png
+
+- name: Beck
+  logo: beck.png
+
+- name: Bucerius
+  logo: bucerius.jpg
+
+- name: Juris
+  logo: juris.png
