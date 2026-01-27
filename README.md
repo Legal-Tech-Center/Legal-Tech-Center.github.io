@@ -1,1 +1,1 @@
-https://legaltech.center
+[legaltech.center](https://legaltech.center/)
