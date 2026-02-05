@@ -7,9 +7,25 @@ baseurl: ""
 # Calendly booking integration
 calendly_url: "https://calendly.com/blockchain-lawyer/legal-tech-center"
 
+# SEO settings
+author: Legal Tech Center
+locale: de_DE
+twitter:
+  card: summary_large_image
+social:
+  name: Legal Tech Center
+  links:
+    - https://www.linkedin.com/company/legal-tech-center
+logo: /assets/images/logo.png
+
 # Build settings
 markdown: kramdown
 theme: null
+
+# Plugins (included in github-pages gem)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from build
 exclude:
@@ -17,6 +33,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - CLAUDE.md
 
 # Collections and defaults
 defaults:
