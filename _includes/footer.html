@@ -1,21 +1,23 @@
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
 <footer class="site-footer">
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Legal Tech Center" class="footer-logo">
-        <p>Wir machen die Arbeit mit Recht effektiver.</p>
+        <p>{{ t.footer.tagline }}</p>
       </div>
 
       <nav class="footer-nav">
-        <a href="#about">Das Center</a>
-        <a href="#events">Events</a>
-        <a href="#faculty">Faculty</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#what-we-do">{{ t.nav.what_we_do }}</a>
+        <a href="#why-ltc">{{ t.nav.why_ltc }}</a>
+        <a href="#contact">{{ t.nav.contact }}</a>
+        <a href="{{ t.language.switch_url }}" class="lang-link">{{ t.language.switch_to }}</a>
       </nav>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: '%Y' }} Legal Tech Center. Alle Rechte vorbehalten.</p>
+      <p>&copy; {{ 'now' | date: '%Y' }} Legal Tech Center. {{ t.footer.copyright }}</p>
     </div>
   </div>
 </footer>

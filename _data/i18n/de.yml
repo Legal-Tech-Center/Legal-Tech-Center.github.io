@@ -1,0 +1,80 @@
+# German translations
+nav:
+  what_we_do: "Was wir tun"
+  why_ltc: "Warum LTC"
+  resources: "Ressourcen"
+  contact: "Kontakt"
+  book_consultation: "Beratung buchen"
+
+hero:
+  headline: "Agentische Workflows für Rechtsteams"
+  subheadline: "KI-Kollegen für die Routinearbeit. Sie konzentrieren sich auf das Wesentliche."
+  cta_consultation: "Beratung buchen"
+  cta_learn_more: "Mehr erfahren"
+
+what_we_do:
+  title: "Was wir tun"
+  intro: "Wir entwickeln agentische Workflows, die Rechtsteams von Routineaufgaben befreien."
+  benefit_1_title: "KI-Agenten als Kollegen"
+  benefit_1_desc: "Unsere KI-Agenten übernehmen Dokumentenprüfung, Recherche, Entwürfe und Compliance-Aufgaben."
+  benefit_2_title: "Menschen für Strategie"
+  benefit_2_desc: "Sie konzentrieren sich auf Strategie, Mandantenbeziehungen und komplexe Entscheidungen."
+  benefit_3_title: "Mehr Output, weniger Overhead"
+  benefit_3_desc: "Führen Sie schlankere Teams bei gesteigerter Produktivität."
+
+why_ltc:
+  title: "Warum Legal Tech Center"
+  differentiator_1_title: "10 Jahre Erfahrung"
+  differentiator_1_desc: "Ein Jahrzehnt im deutschen Legal Tech Markt. Wir kennen die Branche."
+  differentiator_2_title: "Bewährte Workflows"
+  differentiator_2_desc: "Erprobte agentische Workflows speziell für den Rechtsbereich."
+  differentiator_3_title: "Flexible Bereitstellung"
+  differentiator_3_desc: "Cloud oder On-Premise mit dedizierter Hardware - Sie entscheiden."
+
+ebook:
+  title: "Leitfaden herunterladen"
+  headline: "Unser Guide zu agentischen Legal Workflows"
+  description: "Erfahren Sie, wie KI-Agenten Ihre Rechtsabteilung transformieren können."
+  cta: "Kostenlos herunterladen"
+  email_placeholder: "Ihre E-Mail-Adresse"
+
+media:
+  title: "Bekannt aus"
+
+contact:
+  title: "Kontakt"
+  company_name: "Legal Tech Center"
+  email_label: "E-Mail"
+  cta: "Beratung buchen"
+
+impressum:
+  title: "Impressum"
+  legal_info: "Angaben gemäß § 5 TMG"
+  company: "Legal Tech Center LTC UG (haftungsbeschränkt)"
+  representative: "c/o Stephan Breidenbach"
+  street: "Lückhoffstr. 24"
+  city: "14129 Berlin"
+  registry_label: "Handelsregister"
+  registry: "HRB 187368 B, Amtsgericht Berlin-Charlottenburg"
+  represented_by_label: "Vertreten durch"
+  represented_by: "Geschäftsführer Stephan Breidenbach"
+  vat_label: "USt-ID"
+  vat: "DE312546735"
+  contact_label: "Kontakt"
+  responsible_label: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+  disclaimer_title: "Haftungsausschluss"
+  liability_content_title: "Haftung für Inhalte"
+  liability_content: "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+  liability_links_title: "Haftung für Links"
+  liability_links: "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+  copyright_title: "Urheberrecht"
+  copyright: "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+
+footer:
+  tagline: "KI-Workflows für die Rechtsbranche."
+  copyright: "Alle Rechte vorbehalten."
+
+language:
+  current: "DE"
+  switch_to: "EN"
+  switch_url: "/en/"

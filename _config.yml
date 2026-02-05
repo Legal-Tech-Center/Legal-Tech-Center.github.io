@@ -1,8 +1,11 @@
 # Site settings
 title: Legal Tech Center
-description: Wir machen die Arbeit mit Recht effektiver
+description: Agentic Workflows for Legal Teams
 url: "https://legaltech.center"
 baseurl: ""
+
+# Calendly booking integration
+calendly_url: "https://calendly.com/blockchain-lawyer/legal-tech-center"
 
 # Build settings
 markdown: kramdown
@@ -21,3 +24,8 @@ defaults:
       path: ""
     values:
       layout: default
+      lang: de
+  - scope:
+      path: "en"
+    values:
+      lang: en

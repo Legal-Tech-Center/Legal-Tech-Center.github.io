@@ -1,18 +1,25 @@
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
 <header class="site-header">
   <nav class="nav-container">
-    <a href="#" class="logo">
+    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="logo">
       <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Legal Tech Center" class="logo-image">
     </a>
 
-    <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+    <button class="mobile-menu-toggle" aria-label="{% if lang == 'de' %}Menü öffnen{% else %}Open menu{% endif %}">
       <span class="hamburger"></span>
     </button>
 
     <ul class="nav-links">
-      <li><a href="#about">Das Center</a></li>
-      <li><a href="#events">Workshops & Events</a></li>
-      <li><a href="#faculty">Faculty</a></li>
-      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="#what-we-do">{{ t.nav.what_we_do }}</a></li>
+      <li><a href="#why-ltc">{{ t.nav.why_ltc }}</a></li>
+      <li><a href="#contact">{{ t.nav.contact }}</a></li>
+      <li class="nav-lang">
+        <a href="{{ t.language.switch_url }}" class="lang-toggle">{{ t.language.switch_to }}</a>
+      </li>
+      <li class="nav-cta">
+        <a href="#" onclick="Calendly.initPopupWidget({url: '{{ site.calendly_url }}?primary_color=3BBFFF'}); return false;" class="btn btn-primary btn-sm">{{ t.nav.book_consultation }}</a>
+      </li>
     </ul>
   </nav>
 </header>

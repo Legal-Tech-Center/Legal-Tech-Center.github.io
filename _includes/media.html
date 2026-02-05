@@ -1,6 +1,8 @@
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="media" id="media">
   <div class="container">
-    <h2 class="section-title">Bekannt aus</h2>
+    <h2 class="section-title">{{ t.media.title }}</h2>
 
     <div class="media-grid">
       {% for outlet in site.data.media %}

@@ -1,78 +1,71 @@
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="contact" id="contact">
   <div class="container">
-    <h2 class="section-title">Kontakt</h2>
+    <h2 class="section-title">{{ t.contact.title }}</h2>
 
     <div class="contact-grid">
       <div class="contact-info">
-        <h3>Legal Tech Center</h3>
+        <h3>{{ t.contact.company_name }}</h3>
         <address>
           <p>
-            Legal Tech Center LTC UG (haftungsbeschränkt)<br>
-            c/o Stephan Breidenbach<br>
-            Lückhoffstr. 24<br>
-            14129 Berlin
+            {{ t.impressum.company }}<br>
+            {{ t.impressum.representative }}<br>
+            {{ t.impressum.street }}<br>
+            {{ t.impressum.city }}
           </p>
         </address>
         <p class="contact-detail">
-          <strong>E-Mail:</strong><br>
+          <strong>{{ t.contact.email_label }}:</strong><br>
           <a href="mailto:info@legaltech.center">info@legaltech.center</a>
         </p>
+        <a href="#" onclick="Calendly.initPopupWidget({url: '{{ site.calendly_url }}?primary_color=3BBFFF'}); return false;" class="btn btn-primary">{{ t.contact.cta }}</a>
       </div>
 
       <div class="impressum">
-        <h3>Impressum</h3>
+        <h3>{{ t.impressum.title }}</h3>
         <p>
-          <strong>Angaben gemäß § 5 TMG</strong><br>
-          Legal Tech Center LTC UG (haftungsbeschränkt)<br>
-          c/o Stephan Breidenbach<br>
-          Lückhoffstr. 24<br>
-          14129 Berlin
+          <strong>{{ t.impressum.legal_info }}</strong><br>
+          {{ t.impressum.company }}<br>
+          {{ t.impressum.representative }}<br>
+          {{ t.impressum.street }}<br>
+          {{ t.impressum.city }}
         </p>
         <p>
-          <strong>Handelsregister:</strong><br>
-          HRB 187368 B, Amtsgericht Berlin-Charlottenburg
+          <strong>{{ t.impressum.registry_label }}:</strong><br>
+          {{ t.impressum.registry }}
         </p>
         <p>
-          <strong>Vertreten durch:</strong><br>
-          Geschäftsführer Stephan Breidenbach
+          <strong>{{ t.impressum.represented_by_label }}:</strong><br>
+          {{ t.impressum.represented_by }}
         </p>
         <p>
-          <strong>USt-ID:</strong><br>
-          DE312546735
+          <strong>{{ t.impressum.vat_label }}:</strong><br>
+          {{ t.impressum.vat }}
         </p>
         <p>
-          <strong>Kontakt:</strong><br>
-          E-Mail: <a href="mailto:info@legaltech.center">info@legaltech.center</a>
+          <strong>{{ t.impressum.contact_label }}:</strong><br>
+          {{ t.contact.email_label }}: <a href="mailto:info@legaltech.center">info@legaltech.center</a>
         </p>
         <p>
-          <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+          <strong>{{ t.impressum.responsible_label }}:</strong><br>
           Stephan Breidenbach<br>
-          Lückhoffstr. 24<br>
-          14129 Berlin
+          {{ t.impressum.street }}<br>
+          {{ t.impressum.city }}
         </p>
 
-        <h4>Haftungsausschluss</h4>
+        <h4>{{ t.impressum.disclaimer_title }}</h4>
         <p>
-          <strong>Haftung für Inhalte</strong><br>
-          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen
-          Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind
-          wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
-          fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
-          rechtswidrige Tätigkeit hinweisen.
+          <strong>{{ t.impressum.liability_content_title }}</strong><br>
+          {{ t.impressum.liability_content }}
         </p>
         <p>
-          <strong>Haftung für Links</strong><br>
-          Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir
-          keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine
-          Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
-          Anbieter oder Betreiber der Seiten verantwortlich.
+          <strong>{{ t.impressum.liability_links_title }}</strong><br>
+          {{ t.impressum.liability_links }}
         </p>
         <p>
-          <strong>Urheberrecht</strong><br>
-          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
-          unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
-          Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
-          bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+          <strong>{{ t.impressum.copyright_title }}</strong><br>
+          {{ t.impressum.copyright }}
         </p>
       </div>
     </div>

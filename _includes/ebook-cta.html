@@ -1,0 +1,15 @@
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
+<section class="ebook-cta" id="resources">
+  <div class="container">
+    <div class="ebook-banner">
+      <div class="ebook-content">
+        <h2 class="ebook-headline">{{ t.ebook.headline }}</h2>
+        <p class="ebook-description">{{ t.ebook.description }}</p>
+      </div>
+      <div class="ebook-cta-button">
+        <a href="#" onclick="Calendly.initPopupWidget({url: '{{ site.calendly_url }}?primary_color=3BBFFF'}); return false;" class="btn btn-primary btn-lg">{{ t.nav.book_consultation }}</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,14 +1,13 @@
-<section class="hero" id="home">
+{% assign lang = page.lang | default: "de" %}
+{% assign t = site.data.i18n[lang] %}
+<section class="hero" id="hero">
   <div class="hero-content">
-    <h1 class="hero-title">
-      Wir machen die Arbeit<br>
-      <span class="highlight">mit Recht</span> effektiver
-    </h1>
-    <p class="hero-subtitle">
-      Das Legal Tech Center verbindet Rechtswissenschaft mit Technologie
-      und treibt die digitale Transformation der Rechtsbranche voran.
-    </p>
-    <a href="#about" class="btn btn-primary">Mehr erfahren</a>
+    <h1 class="hero-title">{{ t.hero.headline }}</h1>
+    <p class="hero-subtitle">{{ t.hero.subheadline }}</p>
+    <div class="hero-ctas">
+      <a href="#" onclick="Calendly.initPopupWidget({url: '{{ site.calendly_url }}?primary_color=3BBFFF'}); return false;" class="btn btn-primary">{{ t.hero.cta_consultation }}</a>
+      <a href="#what-we-do" class="btn btn-secondary">{{ t.hero.cta_learn_more }}</a>
+    </div>
   </div>
-  <div class="hero-decoration"></div>
+  <div class="hero-decoration" aria-hidden="true"></div>
 </section>
