@@ -1,0 +1,150 @@
+{% assign lang = page.lang | default: "de" %}
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ site.url }}/#organization",
+  "name": "Legal Tech Center",
+  "legalName": "Legal Tech Center LTC UG (haftungsbeschränkt)",
+  "url": "{{ site.url }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/assets/images/logo.png"
+  },
+  "image": "{{ site.url }}/assets/images/og-image-{% if lang == 'en' %}en{% else %}de{% endif %}.png",
+  "email": "info@legaltech.center",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lückhoffstr. 24",
+    "addressLocality": "Berlin",
+    "postalCode": "14129",
+    "addressCountry": "DE"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/legal-tech-center"
+  ],
+  "foundingDate": "2015",
+  "description": "{% if lang == 'en' %}We build agentic AI workflows that free legal teams from routine tasks like document review, research, and compliance.{% else %}Wir entwickeln agentische KI-Workflows, die Rechtsteams von Routineaufgaben wie Dokumentenprüfung, Recherche und Compliance befreien.{% endif %}"
+}
+</script>
+
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "{{ site.url }}/#localbusiness",
+  "name": "Legal Tech Center",
+  "image": "{{ site.url }}/assets/images/og-image-{% if lang == 'en' %}en{% else %}de{% endif %}.png",
+  "url": "{{ site.url }}{% if lang == 'en' %}/en/{% endif %}",
+  "email": "info@legaltech.center",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lückhoffstr. 24",
+    "addressLocality": "Berlin",
+    "postalCode": "14129",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.4234,
+    "longitude": 13.2034
+  },
+  "priceRange": "$$$",
+  "areaServed": {
+    "@type": "Continent",
+    "name": "Europe"
+  },
+  "knowsLanguage": ["de", "en"],
+  "parentOrganization": {
+    "@id": "{{ site.url }}/#organization"
+  }
+}
+</script>
+
+<!-- Services Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{% if lang == 'en' %}Our Services{% else %}Unsere Leistungen{% endif %}",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "@id": "{{ site.url }}/#service-consulting",
+        "name": "{% if lang == 'en' %}Agentic AI Workflow Consulting{% else %}Agentische KI-Workflow Beratung{% endif %}",
+        "description": "{% if lang == 'en' %}Strategy and implementation of AI agent workflows for legal teams. We help you identify automation opportunities and deploy AI co-workers.{% else %}Strategie und Implementierung von KI-Agenten-Workflows für Rechtsteams. Wir helfen Ihnen, Automatisierungspotenziale zu identifizieren und KI-Kollegen einzusetzen.{% endif %}",
+        "provider": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "serviceType": "Consulting",
+        "areaServed": "Europe"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "@id": "{{ site.url }}/#service-implementation",
+        "name": "{% if lang == 'en' %}Legal Tech Implementation{% else %}Legal Tech Implementierung{% endif %}",
+        "description": "{% if lang == 'en' %}End-to-end deployment of legal technology solutions. Cloud or on-premise with dedicated hardware.{% else %}End-to-End-Bereitstellung von Legal-Tech-Lösungen. Cloud oder On-Premise mit dedizierter Hardware.{% endif %}",
+        "provider": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "serviceType": "Implementation",
+        "areaServed": "Europe"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "@id": "{{ site.url }}/#service-training",
+        "name": "{% if lang == 'en' %}Training & Workshops{% else %}Schulungen & Workshops{% endif %}",
+        "description": "{% if lang == 'en' %}Hands-on training for legal teams to effectively use AI tools and agentic workflows.{% else %}Praxisnahe Schulungen für Rechtsteams zur effektiven Nutzung von KI-Tools und agentischen Workflows.{% endif %}",
+        "provider": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "serviceType": "Training",
+        "areaServed": "Europe"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "@id": "{{ site.url }}/#service-development",
+        "name": "{% if lang == 'en' %}Custom AI Development{% else %}Individuelle KI-Entwicklung{% endif %}",
+        "description": "{% if lang == 'en' %}Bespoke AI agents and tools built for your specific legal workflows and requirements.{% else %}Maßgeschneiderte KI-Agenten und Tools für Ihre spezifischen juristischen Workflows und Anforderungen.{% endif %}",
+        "provider": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "serviceType": "Development",
+        "areaServed": "Europe"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- WebSite Schema with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.url }}/#website",
+  "name": "Legal Tech Center",
+  "url": "{{ site.url }}",
+  "publisher": {
+    "@id": "{{ site.url }}/#organization"
+  },
+  "inLanguage": ["de", "en"]
+}
+</script>
