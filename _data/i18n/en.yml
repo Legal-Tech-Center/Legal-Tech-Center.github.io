@@ -1,54 +1,22 @@
 # English translations
-nav:
-  what_we_do: "What We Do"
-  why_ltc: "Why LTC"
-  resources: "Resources"
-  contact: "Contact"
-  book_consultation: "Book Consultation"
+language:
+  switch_label: "Deutsch"
+  switch_lang: "de"
 
-hero:
-  headline: "Agentic Workflows for Legal Teams"
-  subheadline: "AI co-workers that handle the grunt work. You focus on what matters."
-  cta_consultation: "Book Consultation"
-  cta_learn_more: "Learn More"
+home:
+  headline: "A research lab for law and artificial intelligence"
+  rn_label: "Paragraph"
+  paragraphs:
+    - "Legal Tech Center is a research lab in Berlin. We study what changes when machines do legal work, and what the law asks of them in return."
+    - "Some of the questions we work on: How do language models handle statutes and case law? When is machine-generated legal advice reliable, and how can anyone check? What do AI agents change about the work of law firms, legal departments, courts and public administration? And how do you regulate systems that apply the law themselves?"
+    - "We work with people from legal practice, legal scholarship and computer science who test these questions against real cases."
+    - "More on this soon. Until then, you can reach us at <a href=\"mailto:info@legaltech.center\">info@legaltech.center</a>."
 
-what_we_do:
-  title: "What We Do"
-  intro: "We build agentic workflows that free legal teams from routine tasks."
-  benefit_1_title: "AI Agents as Co-Workers"
-  benefit_1_desc: "Our AI agents handle document review, research, drafting, and compliance tasks."
-  benefit_2_title: "Humans for Strategy"
-  benefit_2_desc: "You focus on strategy, client relationships, and complex judgment calls."
-  benefit_3_title: "More Output, Less Overhead"
-  benefit_3_desc: "Run leaner teams while increasing productivity."
-
-why_ltc:
-  title: "Why Legal Tech Center"
-  differentiator_1_title: "10 Years of Experience"
-  differentiator_1_desc: "A decade in the German legal tech market. We know the industry."
-  differentiator_2_title: "Proven Workflows"
-  differentiator_2_desc: "Battle-tested agentic workflows built specifically for legal."
-  differentiator_3_title: "Flexible Deployment"
-  differentiator_3_desc: "Cloud or on-premise with dedicated hardware - your choice."
-
-ebook:
-  title: "Download Guide"
-  headline: "Our Guide to Agentic Legal Workflows"
-  description: "Learn how AI agents can transform your legal department."
-  cta: "Download Free"
-  email_placeholder: "Your email address"
-
-media:
-  title: "As Seen In"
-
-contact:
-  title: "Contact"
-  company_name: "Legal Tech Center"
-  email_label: "Email"
-  cta: "Book Consultation"
+footer:
+  imprint_url: "/en/legal-notice/"
 
 impressum:
-  title: "Legal Notice"
+  title: "Legal notice"
   legal_info: "Information according to § 5 TMG"
   company: "Legal Tech Center LTC UG (limited liability)"
   representative: "c/o Knowledge Tools – Gesellschaft für Lern- und Wissenschaftssysteme mbH"
@@ -61,6 +29,7 @@ impressum:
   vat_label: "VAT ID"
   vat: "DE312546735"
   contact_label: "Contact"
+  email_label: "Email"
   responsible_label: "Responsible for content according to § 55 para. 2 RStV"
   disclaimer_title: "Disclaimer"
   liability_content_title: "Liability for Content"
@@ -69,12 +38,3 @@ impressum:
   liability_links: "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
   copyright_title: "Copyright"
   copyright: "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator."
-
-footer:
-  tagline: "AI workflows for the legal industry."
-  copyright: "All rights reserved."
-
-language:
-  current: "EN"
-  switch_to: "DE"
-  switch_url: "/"

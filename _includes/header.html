@@ -1,25 +1,14 @@
 {% assign lang = page.lang | default: "de" %}
 {% assign t = site.data.i18n[lang] %}
-<header class="site-header">
-  <nav class="nav-container">
-    <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="logo">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Legal Tech Center" class="logo-image">
+<header class="masthead row">
+  <!-- Logo mark, redrawn from logo.png. The logo's vertical bar is the page rule drawn in style.css -->
+  <svg class="mark" viewBox="0 0 965 1197" aria-hidden="true" focusable="false">
+    <path d="M0 237H423V715H300V359H0Z M0 481H123V837H423V960H0Z M545 237H723V359H545Z M545 837H723V960H545Z"/>
+  </svg>
+  <div class="masthead-end col-text">
+    <a class="wordmark-link" href="{% if lang == 'en' %}/en/{% else %}/{% endif %}">
+      <img class="wordmark" src="{{ '/assets/images/wordmark.png' | relative_url }}" width="800" height="390" alt="Legal Tech Center">
     </a>
-
-    <button class="mobile-menu-toggle" aria-label="{% if lang == 'de' %}Menü öffnen{% else %}Open menu{% endif %}">
-      <span class="hamburger"></span>
-    </button>
-
-    <ul class="nav-links">
-      <li><a href="#what-we-do">{{ t.nav.what_we_do }}</a></li>
-      <li><a href="#why-ltc">{{ t.nav.why_ltc }}</a></li>
-      <li><a href="#contact">{{ t.nav.contact }}</a></li>
-      <li class="nav-lang">
-        <a href="{{ t.language.switch_url }}" class="lang-toggle">{{ t.language.switch_to }}</a>
-      </li>
-      <li class="nav-cta">
-        <a href="#" onclick="Calendly.initPopupWidget({url: '{{ site.calendly_url }}?primary_color=3BBFFF'}); return false;" class="btn btn-juicy btn-sm">{{ t.nav.book_consultation }}</a>
-      </li>
-    </ul>
-  </nav>
+    <a class="lang-switch" href="{{ page.translation | relative_url }}" hreflang="{{ t.language.switch_lang }}" lang="{{ t.language.switch_lang }}">{{ t.language.switch_label }}</a>
+  </div>
 </header>

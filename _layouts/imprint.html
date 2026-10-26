@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+<div class="row">
+  <h1 class="page-title col-text">{{ t.impressum.title }}</h1>
+</div>
+
+<div class="row">
+  <div class="imprint col-text">
+    <h2>{{ t.impressum.legal_info }}</h2>
+    <p>
+      {{ t.impressum.company }}<br>
+      {{ t.impressum.representative }}<br>
+      {{ t.impressum.street }}<br>
+      {{ t.impressum.city }}
+    </p>
+
+    <h2>{{ t.impressum.registry_label }}</h2>
+    <p>{{ t.impressum.registry }}</p>
+
+    <h2>{{ t.impressum.represented_by_label }}</h2>
+    <p>{{ t.impressum.represented_by }}</p>
+
+    <h2>{{ t.impressum.vat_label }}</h2>
+    <p>{{ t.impressum.vat }}</p>
+
+    <h2>{{ t.impressum.contact_label }}</h2>
+    <p>{{ t.impressum.email_label }}: <a href="mailto:info@legaltech.center">info@legaltech.center</a></p>
+
+    <h2>{{ t.impressum.responsible_label }}</h2>
+    <p>
+      Stephan Breidenbach<br>
+      {{ t.impressum.representative }}<br>
+      {{ t.impressum.street }}<br>
+      {{ t.impressum.city }}
+    </p>
+
+    <h2>{{ t.impressum.disclaimer_title }}</h2>
+    <h3>{{ t.impressum.liability_content_title }}</h3>
+    <p>{{ t.impressum.liability_content }}</p>
+    <h3>{{ t.impressum.liability_links_title }}</h3>
+    <p>{{ t.impressum.liability_links }}</p>
+    <h3>{{ t.impressum.copyright_title }}</h3>
+    <p>{{ t.impressum.copyright }}</p>
+  </div>
+</div>

@@ -1,11 +1,8 @@
 # Site settings
 title: Legal Tech Center
-description: Agentic Workflows for Legal Teams
+description: Forschungslabor für Recht und künstliche Intelligenz
 url: "https://legaltech.center"
 baseurl: ""
-
-# Calendly booking integration
-calendly_url: "https://calendly.com/blockchain-lawyer/legal-tech-center"
 
 # SEO settings
 author: Legal Tech Center
@@ -42,7 +39,9 @@ defaults:
     values:
       layout: default
       lang: de
+      locale: de_DE
   - scope:
       path: "en"
     values:
       lang: en
+      locale: en_US

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+<div class="row">
+  <h1 class="headline col-text">{{ t.home.headline }}</h1>
+</div>
+
+{% for paragraph in t.home.paragraphs %}
+<div class="row rn" id="rn-{{ forloop.index }}">
+  <a class="rn-number" href="#rn-{{ forloop.index }}" aria-label="{{ t.home.rn_label }} {{ forloop.index }}">{{ forloop.index }}</a>
+  <p class="col-text">{{ paragraph }}</p>
+</div>
+{% endfor %}
+
+{% include schema.html %}

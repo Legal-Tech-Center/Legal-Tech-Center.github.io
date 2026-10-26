@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: home
 lang: en
-title: "Agentic AI Workflows for Legal Teams"
-description: "AI co-workers that handle the grunt work. We build agentic workflows that free legal teams from document review, research, and compliance tasks."
+title: "Research Lab for Law and AI"
+description: "Legal Tech Center is a Berlin research lab at the intersection of law and artificial intelligence."
 image: /assets/images/og-image-en.png
+translation: /
 ---
