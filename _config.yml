@@ -9,10 +9,6 @@ author: Legal Tech Center
 locale: de_DE
 twitter:
   card: summary_large_image
-social:
-  name: Legal Tech Center
-  links:
-    - https://www.linkedin.com/company/legal-tech-center
 logo: /assets/images/logo.png
 
 # Build settings
